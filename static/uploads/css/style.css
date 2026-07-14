@@ -1,0 +1,429 @@
+/* ===============================
+   GOOGLE FONT
+=================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* ===============================
+   RESET
+=================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:#f4f8fc;
+
+    color:#2d3748;
+
+}
+
+/* ===============================
+   NAVBAR
+=================================*/
+
+.navbar{
+
+    background:linear-gradient(90deg,#2563eb,#1d4ed8);
+
+    padding:18px 35px;
+
+}
+
+.navbar-brand{
+
+    font-size:28px;
+
+    font-weight:700;
+
+}
+
+.navbar .badge{
+
+    padding:10px 16px;
+
+    border-radius:25px;
+
+}
+
+/* ===============================
+   HERO
+=================================*/
+
+.hero{
+
+    background:
+
+    linear-gradient(
+    135deg,
+    #2563eb,
+    #1d4ed8);
+
+    color:white;
+
+    padding:70px 0;
+
+}
+
+.hero h1{
+
+    font-size:46px;
+
+    font-weight:700;
+
+}
+
+.hero p{
+
+    margin-top:20px;
+
+    font-size:18px;
+
+    opacity:.9;
+
+}
+
+.hero-icon{
+
+    font-size:180px;
+
+    opacity:.25;
+
+}
+
+/* ===============================
+   CARDS
+=================================*/
+
+.card{
+
+    border:none;
+
+    border-radius:22px;
+
+    box-shadow:
+
+    0 12px 30px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.card-body{
+
+    padding:35px;
+
+}
+
+/* ===============================
+   UPLOAD CARD
+=================================*/
+
+.upload-card h3{
+
+    font-weight:700;
+
+    margin-bottom:25px;
+
+}
+
+.upload-box{
+
+    border:3px dashed #3b82f6;
+
+    border-radius:18px;
+
+    padding:55px;
+
+    display:block;
+
+    text-align:center;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    background:#f8fbff;
+
+}
+
+.upload-box:hover{
+
+    background:#edf5ff;
+
+    border-color:#2563eb;
+
+}
+
+.upload-icon{
+
+    font-size:65px;
+
+    color:#2563eb;
+
+    margin-bottom:18px;
+
+}
+
+.preview-box{
+
+    margin-top:25px;
+
+}
+
+.preview-box img{
+
+    width:100%;
+
+    border-radius:18px;
+
+    box-shadow:0 6px 20px rgba(0,0,0,.12);
+
+}
+
+/* ===============================
+   BUTTON
+=================================*/
+
+.btn-primary{
+
+    background:
+
+    linear-gradient(
+    90deg,
+    #2563eb,
+    #1d4ed8);
+
+    border:none;
+
+    border-radius:15px;
+
+    padding:15px;
+
+    font-weight:600;
+
+    font-size:18px;
+
+    transition:.35s;
+
+}
+
+.btn-primary:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:
+
+    0 8px 20px rgba(37,99,235,.35);
+
+}
+/* ==========================================
+   AI PREDICTION CARD
+========================================== */
+
+.prediction-card{
+    background:#fff;
+    border-radius:22px;
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+}
+
+.prediction-status{
+    text-align:center;
+    margin:30px 0;
+}
+
+#predictionName{
+    font-size:42px;
+    font-weight:700;
+    color:#16a34a;
+}
+
+#confidenceText{
+    font-size:34px;
+    font-weight:700;
+    color:#2563eb;
+}
+
+/* ==========================================
+   CONFIDENCE BAR
+========================================== */
+
+.confidence-progress{
+    height:18px;
+    border-radius:20px;
+    overflow:hidden;
+    background:#e5e7eb;
+}
+
+.progress-bar{
+    font-weight:600;
+    font-size:14px;
+    transition:width .8s ease;
+}
+
+/* ==========================================
+   PROBABILITY BARS
+========================================== */
+
+.probability-item{
+    margin-top:18px;
+}
+
+.progress{
+    height:12px;
+    border-radius:12px;
+    overflow:hidden;
+}
+
+/* ==========================================
+   ASSESSMENT CARDS
+========================================== */
+
+.assessment-card{
+    border:none;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.assessment-card:hover{
+    transform:translateY(-6px);
+}
+
+.assessment-card h4{
+    color:#2563eb;
+    margin-bottom:20px;
+    font-weight:600;
+}
+
+/* ==========================================
+   ALERT
+========================================== */
+
+.alert{
+    border:none;
+    border-radius:20px;
+    padding:25px;
+}
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+.footer{
+    background:#1d4ed8;
+    color:white;
+    padding:35px 0;
+    margin-top:60px;
+}
+
+.footer h5{
+    font-weight:700;
+}
+
+/* ==========================================
+   IMAGE ANIMATION
+========================================== */
+
+.preview-box img{
+    animation:fadeIn .6s ease;
+}
+
+@keyframes fadeIn{
+
+    from{
+        opacity:0;
+        transform:scale(.9);
+    }
+
+    to{
+        opacity:1;
+        transform:scale(1);
+    }
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:992px){
+
+.hero{
+
+padding:45px 20px;
+
+}
+
+.hero h1{
+
+font-size:34px;
+
+}
+
+.hero-icon{
+
+font-size:120px;
+
+}
+
+.navbar-brand{
+
+font-size:22px;
+
+}
+
+.card-body{
+
+padding:22px;
+
+}
+
+#predictionName{
+
+font-size:30px;
+
+}
+
+#confidenceText{
+
+font-size:26px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.hero{
+
+text-align:center;
+
+}
+
+.upload-box{
+
+padding:35px;
+
+}
+
+.preview-box img{
+
+max-height:280px;
+object-fit:cover;
+
+}
+
+}
