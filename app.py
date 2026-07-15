@@ -71,8 +71,7 @@ os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
 try:
 
-    model = load_model("alzheimers_model_trained.h5")
-
+    model = load_model("alzheimers_model.keras", compile=False)
     print("Model Loaded Successfully")
 
 except Exception as e:
